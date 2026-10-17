@@ -97,6 +97,10 @@ main {
     margin-bottom: 0.75rem;
 }
 
+.titulo_colorido{
+    color: var(--accent-color);
+}
+
 #apresentacao p {
     font-size: 1.15rem;
     color: var(--text-secondary);
@@ -104,9 +108,7 @@ main {
     margin: 0 auto;
 }
 
-/* ============================================================
-   SECÇÃO DE ARTIGOS (FEED / PORTAL DE NOTÍCIAS)
-   ============================================================ */
+
 #artigos {
     margin-bottom: 5rem;
 }

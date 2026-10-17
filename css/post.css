@@ -1,0 +1,299 @@
+/* ============================================================
+   ESTILOS DEDICADOS ÀS PÁGINAS DE ARTIGOS (POST.CSS)
+   ============================================================ */
+
+.post-main {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+}
+
+/* ============================================================
+   CABEÇALHO DO ARTIGO (100% TRANSPARENTE E SEM FUNDO)
+   ============================================================ */
+.post-hero {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0;
+    margin-bottom: 3.5rem;
+}
+
+/* Título Serifado Editorial */
+.post-hero h1 {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-size: 3.4rem;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    margin-bottom: 1.25rem;
+}
+
+/* Destaque em Itálico e Ciano (Sem nenhuma linha embaixo) */
+.post-hero h1 .destaque-serif {
+    font-style: italic;
+    font-weight: 400;
+    color: #38bdf8;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0;
+    border-bottom: none !important;
+    text-decoration: none !important;
+}
+
+/* Subtítulo / Lead Editorial */
+.post-lead {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 1.15rem;
+    color: #cbd5e1;
+    line-height: 1.65;
+    max-width: 880px;
+    margin-bottom: 1.5rem;
+}
+
+/* Metadados e Referência do Artigo Original */
+.post-meta-bar {
+    font-size: 0.88rem;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.external-source {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.external-source:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ============================================================
+   CORPO EDITORIAL E LETRA CAPITULAR (DROPCAP)
+   ============================================================ */
+.editorial-article {
+    margin-bottom: 4rem;
+}
+
+.editorial-article p {
+    font-family: 'Merriweather', Georgia, 'Times New Roman', serif;
+    font-size: 1.08rem;
+    font-weight: 300;
+    line-height: 1.85;
+    color: #e2e8f0;
+    margin-bottom: 1.75rem;
+    letter-spacing: 0.01em;
+}
+
+.editorial-article strong {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.editorial-article em {
+    font-style: italic;
+    color: #f1f5f9;
+}
+
+/* Letra Capitular (A grande inicial destacada no parágrafo de abertura) */
+.dropcap-paragraph::first-letter {
+    font-family: 'Playfair Display', Georgia, serif;
+    float: left;
+    font-size: 4.8rem;
+    line-height: 0.8;
+    padding-top: 6px;
+    padding-right: 14px;
+    padding-bottom: 4px;
+    color: #38bdf8;
+    font-weight: 700;
+}
+
+/* ============================================================
+   SEÇÕES COMPLEMENTARES E BADGES
+   ============================================================ */
+.post-section {
+    margin-bottom: 4rem;
+}
+
+.section-badge {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.75rem;
+    display: inline-block;
+}
+
+/* ============================================================
+   GRID DE TRADE-OFFS (VANTAGENS & DESVANTAGENS)
+   ============================================================ */
+.tradeoffs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.75rem;
+}
+
+.tradeoff-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.75rem;
+}
+
+.tradeoff-card.pros { 
+    border-top: 4px solid #10b981; /* Verde esmeralda */
+}
+
+.tradeoff-card.cons { 
+    border-top: 4px solid #f43f5e; /* Rosa avermelhado */
+}
+
+.tradeoff-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.25rem;
+}
+
+.indicator-icon { 
+    font-size: 1.25rem; 
+    font-weight: 900; 
+}
+
+.pros .indicator-icon { color: #10b981; }
+.cons .indicator-icon { color: #f43f5e; }
+
+.tradeoff-header h3 {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+}
+
+.tradeoff-card ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.tradeoff-card li {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+}
+
+/* ============================================================
+   ESTUDO DE CASO PRÁTICO
+   ============================================================ */
+.case-study-box {
+    background: linear-gradient(145deg, #13223f 0%, #0d172e 100%);
+    border: 1px solid #1e3a6a;
+    border-left: 5px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.case-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 700;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.case-study-box h3 {
+    font-size: 1.35rem;
+    margin-bottom: 0.85rem;
+    color: var(--text-primary);
+}
+
+.case-study-box p {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+.case-study-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* ============================================================
+   GRID DE GESTÃO DO PROJETO (4 PILARES)
+   ============================================================ */
+.management-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1.25rem;
+}
+
+.management-card {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.management-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent-color);
+}
+
+.card-pillar {
+    margin-bottom: 0.5rem;
+}
+
+.pillar-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.card-pillar h4 {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+}
+
+.management-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+}
+
+/* ============================================================
+   RESPONSIVIDADE (MOBILE / TABLET)
+   ============================================================ */
+@media (max-width: 768px) {
+    .post-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .dropcap-paragraph::first-letter {
+        font-size: 3.8rem;
+        padding-right: 10px;
+    }
+
+    .tradeoffs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .management-grid {
+        grid-template-columns: 1fr;
+    }
+}
