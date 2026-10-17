@@ -73,6 +73,11 @@ header {
     color: var(--accent-color);
 }
 
+.navbar .active {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
 
 main {
     max-width: 1100px;

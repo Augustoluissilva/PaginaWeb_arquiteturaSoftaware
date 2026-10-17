@@ -1,298 +1,276 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/post.css" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <title>Patterns of Legacy Displacement | Arquitetura de Software</title>
-  </head>
-  <body>
-    
-    <header>
-      <nav class="navbar">
-        <ul>
-          <img src="img/logo_weboficial.png" alt="Logo do site" class="logo" />
-          <li><a href="index.html">Home</a></li>
-          <li><a href="microsservicos.html">Microserviços</a></li>
-          <li>
-            <a href="sistemasLegados.html" class="active"
-              >Patterns of Legacy Displacement</a
-            >
-          </li>
-          <li><a href="Arquiteturas_sem_servidor.html">Arquitetura Serverless</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    
-    <main class="post-main">
-      <div class="post-hero">
-        <h1>
-          Patterns of <span class="destaque-serif">Legacy Displacement</span>
-        </h1>
-        <p class="post-lead">
-          Como modernizar infraestruturas tecnológicas obsoletas de forma
-          incremental, segura e sustentável sem a necessidade de paralisar as
-          operações de negócio.
-        </p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/logo_oficial1.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/post.css" />
 
-      
-      <section class="post-section editorial-article">
-        <p class="dropcap-paragraph">
-          Muitas organizações operam com sistemas legados essenciais que, ao
-          longo do tempo, tornaram-se onerosos, frágeis e difíceis de evoluir.
-          Uma reação comum é tentar reescrever o sistema inteiro do zero — uma
-          abordagem do tipo <em>Big Bang</em> —, mas essa estratégia
-          historicamente acarreta prazos exorbitantes, estouro de orçamento e
-          riscos severos de interrupção operacional.
-        </p>
-        <p>
-          O conceito de <strong>Legacy Displacement</strong> propõe o
-          deslocamento gradual do legado: em vez de uma substituição imediata,
-          decompõe-se o sistema e substitui-se uma funcionalidade de cada vez.
-          Durante a transição, sistemas antigos e novos coexistem de forma
-          orquestrada, permitindo validações contínuas em ambiente de produção
-          com mínimo atrito para os usuários.
-        </p>
-      </section>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
+  <title data-i18n="legacy_page_title">Patterns of Legacy Displacement | Arquitetura de Software</title>
+</head>
 
-      
-      <section class="post-section">
-        <h2 class="section-badge">Trade-offs Arquiteturais</h2>
-        
-        <div class="tradeoffs-container">
-          
-          <div class="tradeoff-column">
-            <div class="tradeoff-title">
-              <span class="tag-tradeoff">Pontos Fortes</span>
-              <h3>Vantagens da Abordagem</h3>
-            </div>
-            <ul class="tradeoff-list">
-              <li>
-                <strong>Mitigação Radical de Risco Operacional</strong>
-                <p>Evita o colapso do negócio típico de viragens "Big Bang"; caso surja uma anomalia num módulo novo, a reversão ou correção é cirúrgica e imediata sem paralisar o sistema central.</p>
-              </li>
-              <li>
-                <strong>Entrega Contínua e Antecipada de Valor</strong>
-                <p>O retorno do investimento e as melhorias para os utilizadores chegam a produção faseadamente, em vez de ficarem retidos por anos até à conclusão da plataforma completa.</p>
-              </li>
-              <li>
-                <strong>Validação Real com Tráfego de Produção</strong>
-                <p>Permite testar e calibrar novas tecnologias com utilizadores e cargas reais através de técnicas de interceção, adaptadores e desvio progressivo de rotas.</p>
-              </li>
-              <li>
-                <strong>Curva de Aprendizagem Sustentável</strong>
-                <p>A equipa assimila a nova pilha de ferramentas e a arquitetura moderna gradualmente, evitando sobrecargas cognitivas e facilitando a gestão do conhecimento.</p>
-              </li>
-            </ul>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul>
+        <img src="img/logo_weboficial.png" alt="Logo do site" class="logo" />
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="microsservicos.html" data-i18n="nav_microservices">Microserviços</a></li>
+        <li><a href="sistemasLegados.html" class="active" data-i18n="nav_legacy">Patterns of Legacy Displacement</a></li>
+        <li><a href="Arquiteturas_sem_servidor.html" data-i18n="nav_serverless">Arquitetura Serverless</a></li>
+        <li style="margin-left: auto;">
+            <select id="language-select" style="background: #1e293b; color: #f8fafc; border: 1px solid #38bdf8; padding: 5px 10px; border-radius: 4px; cursor: pointer;">
+                <option value="pt">PT</option>
+                <option value="en">EN</option>
+            </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="post-main">
+    <div class="post-hero">
+      <h1 data-i18n="legacy_hero_title">
+        Patterns of <span class="destaque-serif">Legacy Displacement</span>
+      </h1>
+      <p class="post-lead" data-i18n="legacy_hero_lead">
+        Como modernizar infraestruturas tecnológicas obsoletas de forma
+        incremental, segura e sustentável sem a necessidade de paralisar as
+        operações de negócio.
+      </p>
+    </div>
+
+
+    <section class="post-section editorial-article">
+      <p class="dropcap-paragraph" data-i18n="legacy_p1">
+        Muitas organizações operam com sistemas legados essenciais que, ao
+        longo do tempo, tornaram-se onerosos, frágeis e difíceis de evoluir.
+        Uma reação comum é tentar reescrever o sistema inteiro do zero — uma
+        abordagem do tipo <em>Big Bang</em> —, mas essa estratégia
+        historicamente acarreta prazos exorbitantes, estouro de orçamento e
+        riscos severos de interrupção operacional.
+      </p>
+      <p data-i18n="legacy_p2">
+        O conceito de <strong>Legacy Displacement</strong> propõe o
+        deslocamento gradual do legado: em vez de uma substituição imediata,
+        decompõe-se o sistema e substitui-se uma funcionalidade de cada vez.
+        Durante a transição, sistemas antigos e novos coexistem de forma
+        orquestrada, permitindo validações contínuas em ambiente de produção
+        com mínimo atrito para os usuários.
+      </p>
+    </section>
+
+
+    <section class="post-section">
+      <h2 class="section-badge" data-i18n="tradeoffs">Trade-offs Arquiteturais</h2>
+
+      <div class="tradeoffs-container">
+
+        <div class="tradeoff-column">
+          <div class="tradeoff-title">
+            <span class="tag-tradeoff" data-i18n="strengths">Pontos Fortes</span>
+            <h3 data-i18n="advantages">Vantagens da Abordagem</h3>
           </div>
-
-          
-          <div class="tradeoff-column">
-            <div class="tradeoff-title">
-              <span class="tag-tradeoff">Desafios</span>
-              <h3>Desafios e Limitações</h3>
-            </div>
-            <ul class="tradeoff-list">
-              <li>
-                <strong>Complexidade Temporária da Arquitetura Híbrida</strong>
-                <p>Exige a conceção e sustentação de barramentos provisórios, camadas de adaptação (como padrões Strangler Fig) e tradutores de protocolos durante todo o período de coexistência.</p>
-              </li>
-              <li>
-                <strong>Gestão Crítica da Consistência de Dados</strong>
-                <p>A sincronização bidirecional entre bases de dados antigas e novas cria riscos acrescidos de desfasamento, duplicação e necessidade de rotinas de reconciliação contínua.</p>
-              </li>
-              <li>
-                <strong>Custo de Sustentação em Duplicado</strong>
-                <p>Durante a transição prolongada, a organização tem de arcar com licenças, infraestruturas e monitorização simultânea de dois ambientes distintos.</p>
-              </li>
-              <li>
-                <strong>Risco de Interrupção Prematura</strong>
-                <p>Existe a armadilha de a liderança dar o projeto por concluído após migrar os módulos vitais, deixando o legado antigo eternamente ativo e aumentando a dívida técnica global.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-     
-      <section class="post-section">
-        <div class="case-study-box">
-          <span class="case-tag">Caso Prático Analisado</span>
-          <h3>Transição Gradual em E-commerce e Catálogo Interno</h3>
-          <p>
-            Um exemplo real analisado foi o de uma organização que precisava
-            modernizar o sistema central de ligação entre o inventário interno e
-            a loja online. A substituição total e repentina implicava perigo de
-            perda de vendas.
-          </p>
-          <p>
-            A estratégia consistiu em transferir os produtos por categorias
-            graduais para a nova plataforma. Isso permitiu afinar o desempenho
-            de APIs e corrigir inconsistências em lotes controlados antes de
-            desligar os módulos legados definitivamente.
-          </p>
-        </div>
-      </section>
-
-      
-      <section class="post-section">
-        <h2 class="section-badge">Impactos na Gestão do Projeto</h2>
-        <div class="management-grid">
-          <div class="management-card">
-            <div class="card-pillar">
-              <span class="pillar-label">Cronograma</span>
-              <h4>Prazo</h4>
-            </div>
-            <p>
-              Ciclos rápidos e entregas parciais frequentes, garantindo valor ao
-              negócio muito antes da desativação final do legado.
-            </p>
-          </div>
-
-          <div class="management-card">
-            <div class="card-pillar">
-              <span class="pillar-label">Financeiro</span>
-              <h4>Custo</h4>
-            </div>
-            <p>
-              Investimento distribuído e controlado, evitando desvios
-              orçamentais catastróficos típicos de projetos de substituição
-              total.
-            </p>
-          </div>
-
-          <div class="management-card">
-            <div class="card-pillar">
-              <span class="pillar-label">Pessoas</span>
-              <h4>Equipe</h4>
-            </div>
-            <p>
-              Curva de aprendizagem progressiva, facilitando a partilha de
-              conhecimento entre desenvolvedores legados e modernos.
-            </p>
-          </div>
-
-          <div class="management-card">
-            <div class="card-pillar">
-              <span class="pillar-label">Governança</span>
-              <h4>Riscos</h4>
-            </div>
-            <p>
-              Risco operacional reduzido ao mínimo; qualquer anomalia tem
-              reversão direta para o componente antigo sem suspender a operação.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    
-    <footer class="main-footer">
-      <div class="footer-container">
-        <div class="footer-brand">
-          <img
-            src="img/logos_senai_branco.png"
-            alt="Logo SENAI"
-            class="logo-senai"
-          />
-          <h3>Arquitetura de Software & Gestão</h3>
-          <p>
-            Projeto prático interdisciplinar focado no impacto de padrões
-            arquiteturais no ciclo de vida de projetos de tecnologia.
-          </p>
-        </div>
-
-        <div class="footer-links">
-          <h4>Navegação</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="microsservicos.html">Microserviços</a></li>
+          <ul class="tradeoff-list">
             <li>
-              <a href="sistemasLegados.html">Patterns of Legacy Displacement</a>
+              <strong data-i18n="legacy_adv_1_title">Mitigação Radical de Risco Operacional</strong>
+              <p data-i18n="legacy_adv_1_desc">Evita o colapso do negócio típico de viragens "Big Bang"; caso surja uma anomalia num módulo novo, a reversão ou correção é cirúrgica e imediata sem paralisar o sistema central.</p>
             </li>
-            <li><a href="serverless.html">Arquitetura Serverless</a></li>
+            <li>
+              <strong data-i18n="legacy_adv_2_title">Entrega Contínua e Antecipada de Valor</strong>
+              <p data-i18n="legacy_adv_2_desc">O retorno do investimento e as melhorias para os utilizadores chegam a produção faseadamente, em vez de ficarem retidos por anos até à conclusão da plataforma completa.</p>
+            </li>
+            <li>
+              <strong data-i18n="legacy_adv_3_title">Validação Real com Tráfego de Produção</strong>
+              <p data-i18n="legacy_adv_3_desc">Permite testar e calibrar novas tecnologias com utilizadores e cargas reais através de técnicas de interceção, adaptadores e desvio progressivo de rotas.</p>
+            </li>
+            <li>
+              <strong data-i18n="legacy_adv_4_title">Curva de Aprendizagem Sustentável</strong>
+              <p data-i18n="legacy_adv_4_desc">A equipa assimila a nova pilha de ferramentas e a arquitetura moderna gradualmente, evitando sobrecargas cognitivas e facilitando a gestão do conhecimento.</p>
+            </li>
           </ul>
         </div>
 
-        <div class="footer-socials">
-          <div class="social-group">
-            <h4>Equipe de Desenvolvimento</h4>
-            <ul class="social-list">
-              <li>
-                <span class="member-name">Eduardo Couto:</span>
-                <a
-                  href="https://github.com/Azumii20"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub</a
-                >
-                &bull;
-                <a
-                  href="https://www.linkedin.com/in/eduardo-couto-a0a858279/?isSelfProfile=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <span class="member-name">Luis Augusto:</span>
-                <a
-                  href="https://github.com/Augustoluissilva"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub</a
-                >
-                &bull;
-                <a
-                  href="https://www.linkedin.com/in/luis-augusto-santos-silva/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <span class="member-name">Matheus Pestana:</span>
-                <a
-                  href="https://github.com/matheus-pestana"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub</a
-                >
-                &bull;
-                <a
-                  href="https://www.linkedin.com/in/matheus-arcangelo?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
-          </div>
 
-          <div class="social-group docente">
-            <h4>Docente Responsável</h4>
-            <p class="docente-info">
-              <span class="member-name">Prof. Wesley Fiorezi:</span>
-              <a
-                href="https://www.linkedin.com/in/wesley-fioreze/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
-            </p>
+        <div class="tradeoff-column">
+          <div class="tradeoff-title">
+            <span class="tag-tradeoff" data-i18n="challenges">Desafios</span>
+            <h3 data-i18n="limitations">Desafios e Limitações</h3>
           </div>
+          <ul class="tradeoff-list">
+            <li>
+              <strong data-i18n="legacy_chal_1_title">Complexidade Temporária da Arquitetura Híbrida</strong>
+              <p data-i18n="legacy_chal_1_desc">Exige a conceção e sustentação de barramentos provisórios, camadas de adaptação (como padrões Strangler Fig) e tradutores de protocolos durante todo o período de coexistência.</p>
+            </li>
+            <li>
+              <strong data-i18n="legacy_chal_2_title">Gestão Crítica da Consistência de Dados</strong>
+              <p data-i18n="legacy_chal_2_desc">A sincronização bidirecional entre bases de dados antigas e novas cria riscos acrescidos de desfasamento, duplicação e necessidade de rotinas de reconciliação contínua.</p>
+            </li>
+            <li>
+              <strong data-i18n="legacy_chal_3_title">Custo de Sustentação em Duplicado</strong>
+              <p data-i18n="legacy_chal_3_desc">Durante a transição prolongada, a organização tem de arcar com licenças, infraestruturas e monitorização simultânea de dois ambientes distintos.</p>
+            </li>
+            <li>
+              <strong data-i18n="legacy_chal_4_title">Risco de Interrupção Prematura</strong>
+              <p data-i18n="legacy_chal_4_desc">Existe a armadilha de a liderança dar o projeto por concluído após migrar os módulos vitais, deixando o legado antigo eternamente ativo e aumentando a dívida técnica global.</p>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+
+    <section class="post-section">
+      <div class="case-study-box">
+        <span class="case-tag" data-i18n="legacy_case_tag">Caso Prático Analisado</span>
+        <h3 data-i18n="legacy_case_title">Transição Gradual em E-commerce e Catálogo Interno</h3>
+        <p data-i18n="legacy_case_p1">
+          Um exemplo real analisado foi o de uma organização que precisava
+          modernizar o sistema central de ligação entre o inventário interno e
+          a loja online. A substituição total e repentina implicava perigo de
+          perda de vendas.
+        </p>
+        <p data-i18n="legacy_case_p2">
+          A estratégia consistiu em transferir os produtos por categorias
+          graduais para a nova plataforma. Isso permitiu afinar o desempenho
+          de APIs e corrigir inconsistências em lotes controlados antes de
+          desligar os módulos legados definitivamente.
+        </p>
+        <img src="img/legacy.png" alt="Ilustração do conceito Serverless" class="monolith">
+      </div>
+    </section>
+
+
+    <section class="post-section">
+      <h2 class="section-badge" data-i18n="project_impacts">Impactos na Gestão do Projeto</h2>
+      <div class="management-grid">
+        <div class="management-card">
+          <div class="card-pillar">
+            <span class="pillar-label" data-i18n="timeline">Cronograma</span>
+            <h4 data-i18n="deadline">Prazo</h4>
+          </div>
+          <p data-i18n="legacy_mg_1">
+            Ciclos rápidos e entregas parciais frequentes, garantindo valor ao
+            negócio muito antes da desativação final do legado.
+          </p>
+        </div>
+
+        <div class="management-card">
+          <div class="card-pillar">
+            <span class="pillar-label" data-i18n="financial">Financeiro</span>
+            <h4 data-i18n="cost">Custo</h4>
+          </div>
+          <p data-i18n="legacy_mg_2">
+            Investimento distribuído e controlado, evitando desvios
+            orçamentais catastróficos típicos de projetos de substituição
+            total.
+          </p>
+        </div>
+
+        <div class="management-card">
+          <div class="card-pillar">
+            <span class="pillar-label" data-i18n="people">Equipe</span>
+            <h4 data-i18n="team_label">Equipe</h4>
+          </div>
+          <p data-i18n="legacy_mg_3">
+            Curva de aprendizagem progressiva, facilitando a partilha de
+            conhecimento entre desenvolvedores legados e modernos.
+          </p>
+        </div>
+
+        <div class="management-card">
+          <div class="card-pillar">
+            <span class="pillar-label" data-i18n="governance">Governança</span>
+            <h4 data-i18n="risks">Riscos</h4>
+          </div>
+          <p data-i18n="legacy_mg_4">
+            Risco operacional reduzido ao mínimo; qualquer anomalia tem
+            reversão direta para o componente antigo sem suspender a operação.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="artigos">
+      <h2 data-i18n="original_article">Artigo Original</h2>
+      <article class="card">
+        <h3>Patterns of Legacy Displacement</h3>
+        <p></p>
+        <a href="https://martinfowler.com/articles/patterns-legacy-displacement/" data-i18n="read_full">Ver Conteúdo Completo</a>
+      </article>
+    </section>
+  </main>
+
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="img/logos_senai_branco.png" alt="Logo SENAI" class="logo-senai" />
+        <h3 data-i18n="footer_brand_h3">Arquitetura de Software & Gestão</h3>
+        <p data-i18n="footer_brand_p">
+          Projeto prático interdisciplinar focado no impacto de padrões
+          arquiteturais no ciclo de vida de projetos de tecnologia.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4 data-i18n="footer_nav">Navegação</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="microsservicos.html" data-i18n="nav_microservices">Microserviços</a></li>
+          <li><a href="sistemasLegados.html" data-i18n="nav_legacy">Patterns of Legacy Displacement</a></li>
+          <li><a href="Arquiteturas_sem_servidor.html" data-i18n="nav_serverless">Arquitetura Serverless</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials">
+        <div class="social-group">
+          <h4 data-i18n="footer_team">Equipe de Desenvolvimento</h4>
+          <ul class="social-list">
+            <li>
+              <span class="member-name">Eduardo Couto:</span>
+              <a href="https://github.com/Azumii20" target="_blank" rel="noopener noreferrer">GitHub</a>
+              &bull;
+              <a href="https://www.linkedin.com/in/eduardo-couto-a0a858279/?isSelfProfile=true" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <span class="member-name">Luis Augusto:</span>
+              <a href="https://github.com/Augustoluissilva" target="_blank" rel="noopener noreferrer">GitHub</a>
+              &bull;
+              <a href="https://www.linkedin.com/in/luis-augusto-santos-silva/" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <span class="member-name">Matheus Pestana:</span>
+              <a href="https://github.com/matheus-pestana" target="_blank" rel="noopener noreferrer">GitHub</a>
+              &bull;
+              <a href="https://www.linkedin.com/in/matheus-arcangelo?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-group docente">
+          <h4 data-i18n="footer_teacher">Docente Responsável</h4>
+          <p class="docente-info">
+            <span class="member-name">Prof. Wesley Fiorezi:</span>
+            <a href="https://www.linkedin.com/in/wesley-fioreze/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/translate.js"></script>
+</body>
+
 </html>
