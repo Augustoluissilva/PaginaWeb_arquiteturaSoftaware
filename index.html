@@ -3,22 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <title>Arquitetura de Software</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
+                <img src="img/logo_oficial1.png" alt="Logo do site" class="logo">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="microsservicos.html">Microserviços</a></li>
+                <li><a href="sistemasLegados.html">Patterns of Legacy Displacement</a></li>
+                 <li><a href="serverless.html">Arquitetura Serverless</a></li>
             </ul>
         </nav>
     </header>
-    <div class="titulo">
-        <h1>Arquitetura de Software</h1>
-    </div>
-    
+    <main>
+        <section id="apresentacao">
+            <h1>Arquitetura de Software</h1>
+            <p>Está página web apresenta uma análise resumida sobre conceitos fundamentais de arquitetura de software e seus impactos diretos na gestão de projetos no ambiente de desenvolvimento de softawares.</p>
+            <p>Pesquisa sobre arquitetura de software e suas aplicações práticas. Desenvolvidas pelos os alunos da Faculdade de Tecnologia SENAI Felix Guisard | Taubaté.</p>
+        </section>
+
+        <section id="artigos">
+            <h2>Artigos e Conceitos</h2>
+
+            <article class="card">
+                <h3>Microservice Prerequisites</h3>
+                <p><!-- Breve introdução do conceito c --></p>
+                <a href="https://martinfowler.com/bliki/MicroservicePrerequisites.html">Ver Conteúdo Completo</a>
+            </article>
+
+            <article class="card">
+                <h3>Patterns of Legacy Displacement</h3>
+                <p><!-- Breve introdução do conceito d --></p>
+                <a href="https://martinfowler.com/articles/patterns-legacy-displacement/">Ver Conteúdo Completo</a>
+            </article>
+
+            <article class="card">
+                <h3>Serverless Architectures</h3>
+                <p><!-- Breve introdução do conceito g --></p>
+                <a href="https://martinfowler.com/articles/serverless.html">Ver Conteúdo Completo</a>
+            </article>
+        </section>
+
+        <section id="equipe">
+            <h2>Equipe de Desenvolvedores</h2>
+            <ul>
+                <li>
+                    <img src="img/eduardo_perfil.jpeg" alt="Foto de Eduardo Couto" width="150">
+                    <p>Eduardo Couto</p>
+                    <p>Designer/ Pesquisador</p>
+                </li>
+                <li>
+                    <img src="img/luis_perfil.jpeg" alt="Foto de Luis Augusto" width="150">
+                    <p>Luis Augusto</p>
+                    <p>Desenvolvedor Full-Stack</p>
+                </li>
+                <li>
+                    <img src="img/matheus_perfil03.jpeg" alt="Foto de Matheus Pestana" width="150">
+                    <p>Matheus Pestana</p>
+                    <p>Desenvolvedor Full-Stack/ DBA</p>
+                </li>
+            </ul>
+        </section>
+         
+    </main>
 
 </body>
 </html>

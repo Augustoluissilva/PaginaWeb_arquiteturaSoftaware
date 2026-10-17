@@ -1,0 +1,252 @@
+/* ============================================================
+   RESET E VARIÁVEIS GERAIS
+   ============================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #0b1329;       /* Fundo do site */
+    --bg-surface: #111e38;       /* Fundo da navbar */
+    --accent-color: #38bdf8;     /* Ciano de destaque */
+    --text-primary: #f8fafc;     /* Títulos e textos claros */
+    --text-secondary: #94a3b8;   /* Descrições e notas */
+    --border-color: #1e293b;     /* Divisórias sutis */
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* ============================================================
+   HEADER E NAVBAR (COM LOGO)
+   ============================================================ */
+header {
+    background-color: var(--bg-surface);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.75rem 1.5rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* Logo alinhada à esquerda e links à direita */
+.navbar .logo {
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+    margin-right: auto;
+}
+
+.navbar a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+/* ============================================================
+   CONTEÚDO PRINCIPAL
+   ============================================================ */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+/* Apresentação (Hero Editorial) */
+#apresentacao {
+    text-align: center;
+    padding: 1.5rem 0 3.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 3rem;
+}
+
+#apresentacao h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.75rem;
+}
+
+#apresentacao p {
+    font-size: 1.15rem;
+    color: var(--text-secondary);
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* ============================================================
+   SEÇÃO DE ARTIGOS (FEED / PORTAL DE NOTÍCIAS)
+   ============================================================ */
+#artigos {
+    margin-bottom: 5rem;
+}
+
+#artigos h2 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+/* Estrutura das notícias: sem caixa, sem fundo e sem borda ao redor */
+#artigos .card {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 2rem 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#artigos .card:last-of-type {
+    border-bottom: none;
+}
+
+/* Título de notícia */
+#artigos .card h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    line-height: 1.3;
+}
+
+/* Parágrafo / Linha de apoio editorial */
+#artigos .card p {
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    max-width: 850px;
+    margin-bottom: 1rem;
+}
+
+/* Link de leitura inline (sem botão pesado) */
+#artigos .card a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: transparent;
+    border: none;
+    padding: 0;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#artigos .card a:hover {
+    color: #ffffff;
+    transform: translateX(5px);
+}
+
+/* ============================================================
+   SEÇÃO DA EQUIPE
+   ============================================================ */
+#equipe {
+    border-top: 1px solid var(--border-color);
+    padding-top: 3.5rem;
+}
+
+#equipe h2 {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#equipe ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2rem;
+}
+
+#equipe li {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#equipe li img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 2px solid var(--accent-color);
+}
+
+#equipe li p:first-of-type {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+#equipe li p:last-of-type {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ============================================================
+   RESPONSIVIDADE (MOBILE)
+   ============================================================ */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .navbar .logo {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #apresentacao h1 {
+        font-size: 2rem;
+    }
+
+    #artigos .card h3 {
+        font-size: 1.35rem;
+    }
+
+    #equipe ul {
+        grid-template-columns: 1fr;
+    }
+}
