@@ -1,290 +1,271 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/post.css" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <title>Serverless Architectures | Arquitetura de Software</title>
-  </head>
-  <body>
-    
-    <header>
-      <nav class="navbar">
-        <ul>
-          <img src="img/logo_weboficial.png" alt="Logo do site" class="logo" />
-          <li><a href="index.html">Home</a></li>
-          <li><a href="microsservicos.html">Microserviços</a></li>
-          <li>
-            <a href="sistemasLegados.html">Patterns of Legacy Displacement</a>
-          </li>
-          <li><a href="serverless.html" class="active">Arquitetura Serverless</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    
-    <main class="post-main">
-      <div class="post-hero">
-        <h1>
-          Serverless <span class="destaque-serif">Architectures</span>
-        </h1>
-        <p class="post-lead">
-          Como o desacoplamento da gestão física de servidores e a computação orientada
-          a eventos transformam a escalabilidade, o modelo de cobrança e a entrega de software.
-        </p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/logo_oficial1.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/post.css" />
 
-      
-      <section class="post-section editorial-article">
-        <p class="dropcap-paragraph">
-          O artigo <em>Serverless Architectures</em>, elaborado por Mike Roberts,
-          descreve um modelo arquitetural em que os desenvolvedores criam e executam
-          aplicações sem a necessidade de provisionar, configurar ou gerenciar servidores
-          diretamente. Embora a infraestrutura computacional continue existindo, toda a
-          complexidade operacional de balanceamento, manutenção de hardware e atualização
-          do sistema operacional é integralmente delegada ao provedor de nuvem.
-        </p>
-        <p>
-          A abordagem se apoia fundamentalmente em dois modelos: o uso de serviços prontos de terceiros
-          (<strong>BaaS - Backend-as-a-Service</strong>) e a execução de blocos de lógica efêmeros disparados por
-          eventos (<strong>FaaS - Function-as-a-Service</strong>). Com o faturamento estritamente atrelado ao tempo
-          real de processamento, as organizações ganham agilidade para publicar sistemas sem arcar com o custo de
-          máquinas ociosas, embora enfrentem novos desafios de governança e arquitetura.
-        </p>
-      </section>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
+  <title data-i18n="serverless_page_title">Serverless Architectures | Arquitetura de Software</title>
+</head>
 
-      
-      <section class="post-section">
-        <h2 class="section-badge">Trade-offs Arquiteturais</h2>
-        
-        <div class="tradeoffs-container">
-          
-          <div class="tradeoff-column">
-            <div class="tradeoff-title">
-              <span class="tag-tradeoff">Pontos Fortes</span>
-              <h3>Vantagens da Abordagem</h3>
-            </div>
-            <ul class="tradeoff-list">
-              <li>
-                <strong>Custo Atrelado à Execução Real</strong>
-                <p>Eliminação de gastos com infraestrutura ociosa; a organização é faturada estritamente pelos milissegundos e requisições efetivamente processadas.</p>
-              </li>
-              <li>
-                <strong>Elasticidade e Auto-scaling Nativo</strong>
-                <p>A nuvem gerencia o aumento repentino de carga de forma instantânea e automatizada, sem necessidade de configuração prévia de balanceadores ou réplicas.</p>
-              </li>
-              <li>
-                <strong>Agilidade e Foco no Negócio</strong>
-                <p>Equipes de desenvolvimento direcionam 100% dos esforços para a lógica dos produtos e endpoints, abstraindo rotinas de manutenção de servidores e patches de segurança.</p>
-              </li>
-              <li>
-                <strong>Alta Coesão por Eventos</strong>
-                <p>Funções efêmeras e independentes facilitam a decomposição do domínio em microsserviços reativos desacoplados.</p>
-              </li>
-            </ul>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul>
+        <img src="img/logo_weboficial.png" alt="Logo do site" class="logo" />
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="microsservicos.html" data-i18n="nav_microservices">Microserviços</a></li>
+        <li><a href="sistemasLegados.html" data-i18n="nav_legacy">Patterns of Legacy Displacement</a></li>
+        <li><a href="Arquiteturas_sem_servidor.html" class="active" data-i18n="nav_serverless">Arquitetura Serverless</a></li>
+        <li style="margin-left: auto;">
+            <select id="language-select" style="background: #1e293b; color: #f8fafc; border: 1px solid #38bdf8; padding: 5px 10px; border-radius: 4px; cursor: pointer;">
+                <option value="pt">PT</option>
+                <option value="en">EN</option>
+            </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="post-main">
+    <div class="post-hero">
+      <h1 data-i18n="serverless_hero_title">
+        Serverless <span class="destaque-serif">Architectures</span>
+      </h1>
+      <p class="post-lead" data-i18n="serverless_hero_lead">
+        Como o desacoplamento da gestão física de servidores e a computação orientada
+        a eventos transformam a escalabilidade, o modelo de cobrança e a entrega de software.
+      </p>
+    </div>
+
+
+    <section class="post-section editorial-article">
+      <p class="dropcap-paragraph" data-i18n="serverless_p1">
+        O artigo <em>Serverless Architectures</em>, elaborado por Mike Roberts,
+        descreve um modelo arquitetural em que os desenvolvedores criam e executam
+        aplicações sem a necessidade de provisionar, configurar ou gerenciar servidores
+        diretamente. Embora a infraestrutura computacional continue existindo, toda a
+        complexidade operacional de balanceamento, manutenção de hardware e atualização
+        do sistema operacional é integralmente delegada ao provedor de nuvem.
+      </p>
+      <p data-i18n="serverless_p2">
+        A abordagem se apoia fundamentalmente em dois modelos: o uso de serviços prontos de terceiros
+        (<strong>BaaS - Backend-as-a-Service</strong>) e a execução de blocos de lógica efêmeros disparados por
+        eventos (<strong>FaaS - Function-as-a-Service</strong>). Com o faturamento estritamente atrelado ao tempo
+        real de processamento, as organizações ganham agilidade para publicar sistemas sem arcar com o custo de
+        máquinas ociosas, embora enfrentem novos desafios de governança e arquitetura.
+      </p>
+    </section>
+
+
+    <section class="post-section">
+      <h2 class="section-badge" data-i18n="tradeoffs">Trade-offs Arquiteturais</h2>
+
+      <div class="tradeoffs-container">
+
+        <div class="tradeoff-column">
+          <div class="tradeoff-title">
+            <span class="tag-tradeoff" data-i18n="strengths">Pontos Fortes</span>
+            <h3 data-i18n="advantages">Vantagens da Abordagem</h3>
           </div>
-
-          
-          <div class="tradeoff-column">
-            <div class="tradeoff-title">
-              <span class="tag-tradeoff">Desafios</span>
-              <h3>Desafios e Limitações</h3>
-            </div>
-            <ul class="tradeoff-list">
-              <li>
-                <strong>Latência de Inicialização (Cold Start)</strong>
-                <p>Atraso perceptível de milissegundos a segundos na primeira chamada ou quando instâncias inativas são reativadas sob demanda.</p>
-              </li>
-              <li>
-                <strong>Dependência Crítica do Provedor (Vendor Lock-in)</strong>
-                <p>Fortíssimo acoplamento às APIs, mecanismos de gatilho e regras de segurança proprietárias do provedor de nuvem adotado.</p>
-              </li>
-              <li>
-                <strong>Complexidade de Testes e Debug Local</strong>
-                <p>Dificuldade de reproduzir fielmente no computador do desenvolvedor ambientes distribuídos governados por eventos e permissões IAM.</p>
-              </li>
-              <li>
-                <strong>Custos Ocultos em Cargas Contínuas</strong>
-                <p>Para sistemas com tráfego previsível, estável e massivo ininterrupto, o custo unitário do serverless pode ser superior ao de instâncias provisionadas dedicadas.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      
-      <section class="post-section">
-        <div class="case-study-box">
-          <span class="case-tag">Conceito Central Analisado</span>
-          <h3>A Dinâmica Orientada a Eventos: FaaS e Reações sob Demanda</h3>
-          <p>
-            No paradigma serverless, o ciclo de vida do software é inteiramente acionado por eventos: uma rota HTTP,
-            o upload de um arquivo, uma mensagem em fila ou uma mutação no banco de dados instanciam uma função que executa,
-            produz o resultado e é imediatamente encerrada.
-          </p>
-          <p>
-            Isso elimina a necessidade de manter clusters inteiros ligados aguardando transações esporádicas. Por outro lado,
-            exige repensar o controle transacional, a segurança de credenciais e a observabilidade das pontas com tracing distribuído.
-          </p>
-        </div>
-      </section>
-
-      
-      <section class="post-section">
-        <h2 class="section-badge">Impactos na Gestão do Projeto</h2>
-        <div class="management-grid">
-          <div class="management-card">
-            <div class="card-pillar">
-              <span class="pillar-label">Cronograma</span>
-              <h4>Prazo</h4>
-            </div>
-            <p>
-              Acelera expressivamente a entrega inicial do MVP ao terceirizar serviços auxiliares
-              (autenticação, banco e storage), reduzindo tarefas de configuração no início do projeto.
-            </p>
-          </div>
-
-          <div class="management-card">
-            <div class="card-pillar">
-              <span class="pillar-label">Financeiro</span>
-              <h4>Custo</h4>
-            </div>
-            <p>
-              Gera economia substancial em estágios iniciais e aplicações de tráfego variável. No entanto,
-              fluxos contínuos e de carga extrema sem governança podem inflacionar a fatura mensal.
-            </p>
-          </div>
-
-          <div class="management-card">
-            <div class="card-pillar">
-              <span class="pillar-label">Pessoas</span>
-              <h4>Equipe</h4>
-            </div>
-            <p>
-              Permite squads mais enxutas focadas no produto final, mas exige capacitação dos desenvolvedores
-              em arquitetura reativa, controle de concorrência e segurança em nuvem.
-            </p>
-          </div>
-
-          <div class="management-card">
-            <div class="card-pillar">
-              <span class="pillar-label">Governança</span>
-              <h4>Riscos</h4>
-            </div>
-            <p>
-              Riscos operacionais associados à indisponibilidade de serviços terceiros, limitações de concorrência
-              e custos imprevistos derivados de loops ou falhas em chamadas recursivas.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    
-    <footer class="main-footer">
-      <div class="footer-container">
-        <div class="footer-brand">
-          <img
-            src="img/logos_senai_branco.png"
-            alt="Logo SENAI"
-            class="logo-senai"
-          />
-          <h3>Arquitetura de Software & Gestão</h3>
-          <p>
-            Projeto prático interdisciplinar focado no impacto de padrões
-            arquiteturais no ciclo de vida de projetos de tecnologia.
-          </p>
-        </div>
-
-        <div class="footer-links">
-          <h4>Navegação</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="microsservicos.html">Microserviços</a></li>
+          <ul class="tradeoff-list">
             <li>
-              <a href="sistemasLegados.html">Patterns of Legacy Displacement</a>
+              <strong data-i18n="serverless_adv_1_title">Custo Atrelado à Execução Real</strong>
+              <p data-i18n="serverless_adv_1_desc">Eliminação de gastos com infraestrutura ociosa; a organização é faturada estritamente pelos milissegundos e requisições efetivamente processadas.</p>
             </li>
-            <li><a href="serverless.html">Arquitetura Serverless</a></li>
+            <li>
+              <strong data-i18n="serverless_adv_2_title">Elasticidade e Auto-scaling Nativo</strong>
+              <p data-i18n="serverless_adv_2_desc">A nuvem gerencia o aumento repentino de carga de forma instantánea e automatizada, sem necessidade de configuração prévia de balanceadores ou réplicas.</p>
+            </li>
+            <li>
+              <strong data-i18n="serverless_adv_3_title">Agilidade e Foco no Negócio</strong>
+              <p data-i18n="serverless_adv_3_desc">Equipes de desenvolvimento direcionam 100% dos esforços para a lógica dos produtos e endpoints, abstraindo rotinas de manutenção de servidores e patches de segurança.</p>
+            </li>
+            <li>
+              <strong data-i18n="serverless_adv_4_title">Alta Coesão por Eventos</strong>
+              <p data-i18n="serverless_adv_4_desc">Funções efêmeras e independentes facilitam a decomposição do domínio em microsserviços reativos desacoplados.</p>
+            </li>
           </ul>
         </div>
 
-        <div class="footer-socials">
-          <div class="social-group">
-            <h4>Equipe de Desenvolvimento</h4>
-            <ul class="social-list">
-              <li>
-                <span class="member-name">Eduardo Couto:</span>
-                <a
-                  href="https://github.com/Azumii20"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub</a
-                >
-                &bull;
-                <a
-                  href="https://www.linkedin.com/in/eduardo-couto-a0a858279/?isSelfProfile=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <span class="member-name">Luis Augusto:</span>
-                <a
-                  href="https://github.com/Augustoluissilva"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub</a
-                >
-                &bull;
-                <a
-                  href="https://www.linkedin.com/in/luis-augusto-santos-silva/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <span class="member-name">Matheus Pestana:</span>
-                <a
-                  href="https://github.com/matheus-pestana"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub</a
-                >
-                &bull;
-                <a
-                  href="https://www.linkedin.com/in/matheus-arcangelo?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
-          </div>
 
-          <div class="social-group docente">
-            <h4>Docente Responsável</h4>
-            <p class="docente-info">
-              <span class="member-name">Prof. Wesley Fiorezi:</span>
-              <a
-                href="https://www.linkedin.com/in/wesley-fioreze/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
-            </p>
+        <div class="tradeoff-column">
+          <div class="tradeoff-title">
+            <span class="tag-tradeoff" data-i18n="challenges">Desafios</span>
+            <h3 data-i18n="limitations">Desafios e Limitações</h3>
           </div>
+          <ul class="tradeoff-list">
+            <li>
+              <strong data-i18n="serverless_chal_1_title">Latência de Inicialização (Cold Start)</strong>
+              <p data-i18n="serverless_chal_1_desc">Atraso perceptível de milissegundos a segundos na primeira chamada ou quando instâncias inativas são reativadas sob demanda.</p>
+            </li>
+            <li>
+              <strong data-i18n="serverless_chal_2_title">Dependência Crítica do Provedor (Vendor Lock-in)</strong>
+              <p data-i18n="serverless_chal_2_desc">Fortíssimo acoplamento às APIs, mecanismos de gatilho e regras de segurança proprietárias do provedor de nuvem adotado.</p>
+            </li>
+            <li>
+              <strong data-i18n="serverless_chal_3_title">Complexidade de Testes e Debug Local</strong>
+              <p data-i18n="serverless_chal_3_desc">Dificuldade de reproduzir fielmente no computador do desenvolvedor ambientes distribuídos governados por eventos e permissões IAM.</p>
+            </li>
+            <li>
+              <strong data-i18n="serverless_chal_4_title">Custos Ocultos em Cargas Contínuas</strong>
+              <p data-i18n="serverless_chal_4_desc">Para sistemas com tráfego previsível, estável e massivo ininterrupto, o custo unitário do serverless pode ser superior ao de instâncias provisionadas dedicadas.</p>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+
+    <section class="post-section">
+      <div class="case-study-box">
+        <span class="case-tag" data-i18n="serverless_case_tag">Conceito Central Analisado</span>
+        <h3 data-i18n="serverless_case_title">A Dinâmica Orientada a Eventos: FaaS e Reações sob Demanda</h3>
+        <p data-i18n="serverless_case_p1">
+          No paradigma serverless, o ciclo de vida do software é inteiramente acionado por eventos: uma rota HTTP,
+          o upload de um arquivo, uma mensagem em fila ou uma mutação no banco de dados instanciam uma função que
+          executa, produz o resultado e é imediatamente encerrada.
+        </p>
+        <p data-i18n="serverless_case_p2">
+          Isso elimina a necessidade de manter clusters inteiros ligados aguardando transações esporádicas. Por outro
+          lado, exige repensar o controle transacional, a segurança de credenciais e a observabilidade das pontas com tracing
+          distribuído.
+        </p>
+        <img src="img/serverless.png" alt="Ilustração do conceito Serverless" class="monolith">
+      </div>
+    </section>
+
+
+    <section class="post-section">
+      <h2 class="section-badge" data-i18n="project_impacts">Impactos na Gestão do Projeto</h2>
+      <div class="management-grid">
+        <div class="management-card">
+          <div class="card-pillar">
+            <span class="pillar-label" data-i18n="timeline">Cronograma</span>
+            <h4 data-i18n="deadline">Prazo</h4>
+          </div>
+          <p data-i18n="serverless_mg_1">
+            Acelera expressivamente a entrega inicial do MVP ao terceirizar serviços auxiliares
+            (autenticação, banco e storage), reduzindo tarefas de configuração no início do projeto.
+          </p>
+        </div>
+
+        <div class="management-card">
+          <div class="card-pillar">
+            <span class="pillar-label" data-i18n="financial">Financeiro</span>
+            <h4 data-i18n="cost">Custo</h4>
+          </div>
+          <p data-i18n="serverless_mg_2">
+            Gera economia substancial em estágios iniciais e aplicações de tráfego variável. No entanto,
+            fluxos contínuos e de carga extrema sem governança podem inflacionar a fatura mensal.
+          </p>
+        </div>
+
+        <div class="management-card">
+          <div class="card-pillar">
+            <span class="pillar-label" data-i18n="people">Equipe</span>
+            <h4 data-i18n="team_label">Equipe</h4>
+          </div>
+          <p data-i18n="serverless_mg_3">
+            Permite squads mais enxutas focadas no produto final, mas exige capacitação dos desenvolvedores
+            em arquitetura reativa, controle de concorrência e segurança em nuvem.
+          </p>
+        </div>
+
+        <div class="management-card">
+          <div class="card-pillar">
+            <span class="pillar-label" data-i18n="governance">Governança</span>
+            <h4 data-i18n="risks">Riscos</h4>
+          </div>
+          <p data-i18n="serverless_mg_4">
+            Riscos operacionais associados à indisponibilidade de serviços terceiros, limitações de concorrência
+            e custos imprevistos derivados de loops ou falhas em chamadas recursivas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="artigos">
+      <h2 data-i18n="original_article">Artigo Original</h2>
+      <article class="card">
+        <h3>Serverless Architectures</h3>
+        <p></p>
+        <a href="https://martinfowler.com/articles/serverless.html" data-i18n="read_full">Ver Conteúdo Completo</a>
+      </article>
+    </section>
+  </main>
+
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="img/logos_senai_branco.png" alt="Logo SENAI" class="logo-senai" />
+        <h3 data-i18n="footer_brand_h3">Arquitetura de Software & Gestão</h3>
+        <p data-i18n="footer_brand_p">
+          Projeto prático interdisciplinar focado no impacto de padrões
+          arquiteturais no ciclo de vida de projetos de tecnologia.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4 data-i18n="footer_nav">Navegação</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="microsservicos.html" data-i18n="nav_microservices">Microserviços</a></li>
+          <li><a href="sistemasLegados.html" data-i18n="nav_legacy">Patterns of Legacy Displacement</a></li>
+          <li><a href="Arquiteturas_sem_servidor.html" data-i18n="nav_serverless">Arquitetura Serverless</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials">
+        <div class="social-group">
+          <h4 data-i18n="footer_team">Equipe de Desenvolvimento</h4>
+          <ul class="social-list">
+            <li>
+              <span class="member-name">Eduardo Couto:</span>
+              <a href="https://github.com/Azumii20" target="_blank" rel="noopener noreferrer">GitHub</a>
+              &bull;
+              <a href="https://www.linkedin.com/in/eduardo-couto-a0a858279/?isSelfProfile=true" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <span class="member-name">Luis Augusto:</span>
+              <a href="https://github.com/Augustoluissilva" target="_blank" rel="noopener noreferrer">GitHub</a>
+              &bull;
+              <a href="https://www.linkedin.com/in/luis-augusto-santos-silva/" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <span class="member-name">Matheus Pestana:</span>
+              <a href="https://github.com/matheus-pestana" target="_blank" rel="noopener noreferrer">GitHub</a>
+              &bull;
+              <a href="https://www.linkedin.com/in/matheus-arcangelo?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-group docente">
+          <h4 data-i18n="footer_teacher">Docente Responsável</h4>
+          <p class="docente-info">
+            <span class="member-name">Prof. Wesley Fiorezi:</span>
+            <a href="https://www.linkedin.com/in/wesley-fioreze/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/translate.js"></script>
+</body>
+
 </html>

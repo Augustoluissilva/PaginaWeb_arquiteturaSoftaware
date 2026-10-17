@@ -1,132 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo_oficial1.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
-    <title>Arquitetura de Software</title>
+    <title data-i18n="page_title_index">Arquitetura de Software</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <ul>
                 <img src="img/logo_weboficial.png" alt="Logo do site" class="logo">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="microsservicos.html">Microserviços</a></li>
-                <li><a href="sistemasLegados.html">Patterns of Legacy Displacement</a></li>
-                 <li><a href="Arquiteturas_sem_servidor.html">Arquitetura Serverless</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="microsservicos.html" data-i18n="nav_microservices">Microserviços</a></li>
+                <li><a href="sistemasLegados.html" data-i18n="nav_legacy">Patterns of Legacy Displacement</a></li>
+                <li><a href="Arquiteturas_sem_servidor.html" data-i18n="nav_serverless">Arquitetura Serverless</a></li>
+                <!-- Seletor de Idioma -->
+                <li style="margin-left: auto;">
+                    <select id="language-select" style="background: #1e293b; color: #f8fafc; border: 1px solid #38bdf8; padding: 5px 10px; border-radius: 4px; cursor: pointer;">
+                        <option value="pt">PT</option>
+                        <option value="en">EN</option>
+                    </select>
+                </li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="apresentacao">
-            <h1>Arquitetura de <strong class="titulo_colorido">Software</strong></h1>
-            <p>Está página web apresenta uma análise resumida sobre conceitos fundamentais de arquitetura de software e seus impactos diretos na gestão de projetos no ambiente de desenvolvimento de softawares.</p>
-            <p>Pesquisa sobre arquitetura de software e suas aplicações práticas. Desenvolvidas pelos os alunos da Faculdade de Tecnologia SENAI Felix Guisard | Taubaté.</p>
+            <h1 data-i18n="index_hero_title">Arquitetura de <strong class="titulo_colorido">Software</strong></h1>
+            <p data-i18n="index_hero_p1">Está página web apresenta uma análise resumida sobre conceitos fundamentais de arquitetura de software e seus impactos diretos na gestão de projetos no ambiente de desenvolvimento de softawares.</p>
+            <p data-i18n="index_hero_p2">Pesquisa sobre arquitetura de software e suas aplicações práticas. Desenvolvidas pelos os alunos da Faculdade de Tecnologia SENAI Felix Guisard | Taubaté.</p>
         </section>
 
         <section id="artigos">
-            <h2>Artigos e Conceitos</h2>
+            <h2 data-i18n="index_articles_h2">Artigos e Conceitos</h2>
 
             <article class="card">
                 <h3>Microservice Prerequisites</h3>
-                <p><!-- Breve introdução do conceito c --></p>
-                <a href="https://martinfowler.com/bliki/MicroservicePrerequisites.html">Ver Conteúdo Completo</a>
+                <p></p>
+                <a href="https://martinfowler.com/bliki/MicroservicePrerequisites.html" data-i18n="read_full">Ver Conteúdo Completo</a>
             </article>
 
             <article class="card">
                 <h3>Patterns of Legacy Displacement</h3>
-                <p><!-- Breve introdução do conceito d --></p>
-                <a href="https://martinfowler.com/articles/patterns-legacy-displacement/">Ver Conteúdo Completo</a>
+                <p></p>
+                <a href="https://martinfowler.com/articles/patterns-legacy-displacement/" data-i18n="read_full">Ver Conteúdo Completo</a>
             </article>
 
             <article class="card">
                 <h3>Serverless Architectures</h3>
-                <p><!-- Breve introdução do conceito g --></p>
-                <a href="https://martinfowler.com/articles/serverless.html">Ver Conteúdo Completo</a>
+                <p></p>
+                <a href="https://martinfowler.com/articles/serverless.html" data-i18n="read_full">Ver Conteúdo Completo</a>
             </article>
         </section>
 
         <section id="equipe">
-            <h2>Equipe de Desenvolvedores</h2>
+            <h2 data-i18n="index_team_h2">Equipe de Desenvolvedores</h2>
             <ul>
                 <li>
                     <img src="img/eduardo_perfil.jpeg" alt="Foto de Eduardo Couto" width="150">
                     <p>Eduardo Couto</p>
-                    <p>Designer/ Pesquisador</p>
+                    <p data-i18n="role_designer">Designer/ Pesquisador</p>
                 </li>
                 <li>
                     <img src="img/luis_perfil.jpeg" alt="Foto de Luis Augusto" width="150">
                     <p>Luis Augusto</p>
-                    <p>Desenvolvedor Full-Stack</p>
+                    <p data-i18n="role_fullstack">Desenvolvedor Full-Stack</p>
                 </li>
                 <li>
                     <img src="img/matheus_perfil03.jpeg" alt="Foto de Matheus Pestana" width="150">
                     <p>Matheus Pestana</p>
-                    <p>Desenvolvedor Full-Stack/ DBA</p>
+                    <p data-i18n="role_dba">Desenvolvedor Full-Stack/ DBA</p>
                 </li>
             </ul>
         </section>
-
     </main>
 
     <footer class="main-footer">
         <div class="footer-container">
-            
-            
             <div class="footer-brand">
                 <img src="img/logos_senai_branco.png" alt="Logo SENAI" class="logo-senai">
-                <h3>Arquitetura de Software & Gestão</h3>
-                <p>Projeto prático interdisciplinar focado no impacto de padrões arquiteturais no ciclo de vida de projetos de tecnologia.</p>
+                <h3 data-i18n="footer_brand_h3">Arquitetura de Software & Gestão</h3>
+                <p data-i18n="footer_brand_p">Projeto prático interdisciplinar focado no impacto de padrões arquiteturais no ciclo de vida de projetos de tecnologia.</p>
             </div>
-
             
             <div class="footer-links">
-                <h4>Navegação</h4>
+                <h4 data-i18n="footer_nav">Navegação</h4>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="microsservicos.html">Microserviços</a></li>
-                    <li><a href="sistemasLegados.html">Patterns of Legacy Displacement</a></li>
-                    <li><a href="Arquiteturas_sem_servidor.html">Arquitetura Serverless</a></li>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="microsservicos.html" data-i18n="nav_microservices">Microserviços</a></li>
+                    <li><a href="sistemasLegados.html" data-i18n="nav_legacy">Patterns of Legacy Displacement</a></li>
+                    <li><a href="Arquiteturas_sem_servidor.html" data-i18n="nav_serverless">Arquitetura Serverless</a></li>
                 </ul>
             </div>
-
             
             <div class="footer-socials">
-                <!-- Desenvolvedores -->
                 <div class="social-group">
-                    <h4>Equipe de Desenvolvimento</h4>
+                    <h4 data-i18n="footer_team">Equipe de Desenvolvimento</h4>
                     <ul class="social-list">
-                        <li>
-                            <span class="member-name">Eduardo Couto:</span>
-                            <a href="https://github.com/Azumii20" target="_blank" rel="noopener noreferrer">GitHub</a> &bull;
-                            <a href="https://www.linkedin.com/in/eduardo-couto-a0a858279/?isSelfProfile=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        </li>
-                        <li>
-                            <span class="member-name">Luis Augusto:</span>
-                            <a href="https://github.com/Augustoluissilva" target="_blank" rel="noopener noreferrer">GitHub</a> &bull;
-                            <a href="https://www.linkedin.com/in/luis-augusto-santos-silva/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        </li>
-                        <li>
-                            <span class="member-name">Matheus Pestana:</span>
-                            <a href="https://github.com/matheus-pestana" target="_blank" rel="noopener noreferrer">GitHub</a> &bull;
-                            <a href="https://www.linkedin.com/in/matheus-arcangelo?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        </li>
+                        <li><span class="member-name">Eduardo Couto:</span> <a href="https://github.com/Azumii20" target="_blank">GitHub</a> &bull; <a href="https://www.linkedin.com/in/eduardo-couto-a0a858279/?isSelfProfile=true" target="_blank">LinkedIn</a></li>
+                        <li><span class="member-name">Luis Augusto:</span> <a href="https://github.com/Augustoluissilva" target="_blank">GitHub</a> &bull; <a href="https://www.linkedin.com/in/luis-augusto-santos-silva/" target="_blank">LinkedIn</a></li>
+                        <li><span class="member-name">Matheus Pestana:</span> <a href="https://github.com/matheus-pestana" target="_blank">GitHub</a> &bull; <a href="https://www.linkedin.com/in/matheus-arcangelo?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">LinkedIn</a></li>
                     </ul>
                 </div>
-
-                
                 <div class="social-group docente">
-                    <h4>Docente Responsável</h4>
-                    <p class="docente-info">
-                        <span class="member-name">Prof. Wesley Fiorezi:</span>
-                        <a href="https://www.linkedin.com/in/wesley-fioreze/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    </p>
+                    <h4 data-i18n="footer_teacher">Docente Responsável</h4>
+                    <p class="docente-info"><span class="member-name">Prof. Wesley Fiorezi:</span> <a href="https://www.linkedin.com/in/wesley-fioreze/" target="_blank">LinkedIn</a></p>
                 </div>
             </div>
-
         </div>
     </footer>
 
+    <!-- Script de Tradução -->
+    <script src="js/translate.js"></script>
 </body>
 </html>

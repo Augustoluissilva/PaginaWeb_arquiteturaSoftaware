@@ -1,287 +1,267 @@
 <!doctype html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/post.css" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&display=swap"
-      rel="stylesheet"
-    />
-    <title>Microservice Prerequisites | Arquitetura de Software</title>
-  </head>
-  <body>
-   
-    <header>
-      <nav class="navbar">
-        <ul>
-          <img src="img/logo_weboficial.png" alt="Logo do site" class="logo" />
-          <li><a href="index.html">Home</a></li>
-          <li><a href="microsservicos.html" class="active">Microserviços</a></li>
-          <li>
-            <a href="sistemasLegados.html">Patterns of Legacy Displacement</a>
-          </li>
-          <li><a href="Arquiteturas_sem_servidor.html">Arquitetura Serverless</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    
-    <main class="post-main">
-      <div class="post-hero">
-        <h1>
-          Microservice <span class="destaque-serif">Prerequisites</span>
-        </h1>
-        <p class="post-lead">
-          Por que a maturidade operacional, a automação e a cultura DevOps são
-          requisitos indispensáveis antes de decompor um sistema em serviços independentes.
-        </p>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/logo_oficial1.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/post.css" />
 
-      
-      <section class="post-section editorial-article">
-        <p class="dropcap-paragraph">
-          O artigo <em>Microservice Prerequisites</em> discute as competências
-          estruturais mínimas que uma organização precisa consolidar antes de
-          aderir à arquitetura de microsserviços. Essa abordagem segmenta uma
-          solução em componentes autônomos e desacoplados, mas transfere a
-          complexidade do código para a infraestrutura de rede, tornando o
-          desenvolvimento e a governança consideravelmente mais desafiadores se a
-          empresa não estiver devidamente preparada.
-        </p>
-        <p>
-          Martin Fowler enfatiza três capacidades operacionais centrais: a
-          habilidade de <strong>provisionar ambientes e servidores rapidamente</strong>,
-          um ecossistema de <strong>monitoramento contínuo</strong> para rastrear
-          anomalias de ponta a ponta e a capacidade de realizar <strong>deploys
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&display=swap"
+    rel="stylesheet" />
+  <title data-i18n="micro_page_title">Microservice Prerequisites | Arquitetura de Software</title>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul>
+        <img src="img/logo_weboficial.png" alt="Logo do site" class="logo" />
+        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+        <li><a href="microsservicos.html" class="active" data-i18n="nav_microservices">Microserviços</a></li>
+        <li><a href="sistemasLegados.html" data-i18n="nav_legacy">Patterns of Legacy Displacement</a></li>
+        <li><a href="Arquiteturas_sem_servidor.html" data-i18n="nav_serverless">Arquitetura Serverless</a></li>
+        <li style="margin-left: auto;">
+            <select id="language-select" style="background: #1e293b; color: #f8fafc; border: 1px solid #38bdf8; padding: 5px 10px; border-radius: 4px; cursor: pointer;">
+                <option value="pt">PT</option>
+                <option value="en">EN</option>
+            </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="post-main">
+    <div class="post-hero">
+      <h1 data-i18n="micro_hero_title">
+        Microservice <span class="destaque-serif">Prerequisites</span>
+      </h1>
+      <p class="post-lead" data-i18n="micro_hero_lead">
+        Por que a maturidade operacional, a automação e a cultura DevOps são
+        requisitos indispensáveis antes de decompor um sistema em serviços independentes.
+      </p>
+    </div>
+
+
+    <section class="post-section editorial-article">
+      <p class="dropcap-paragraph" data-i18n="micro_p1">
+        O artigo <em>Microservice Prerequisites</em> discute as competências
+        estruturais mínimas que uma organização precisa consolidar antes de
+        aderir à arquitetura de microsserviços. Essa abordagem segmenta uma
+        solução em componentes autônomos e desacoplados, mas transfere a
+        complexidade do código para a infraestrutura de rede, tornando o
+        desenvolvimento e a governança consideravelmente mais desafiadores se a
+        empresa não estiver devidamente preparada.
+      </p>
+      <p data-i18n="micro_p2">
+        Martin Fowler enfatiza três capacidades operacionais centrais: a
+        habilidade de <strong>provisionar ambientes e servidores rapidamente</strong>,
+        um ecossistema de <strong>monitoramento contínuo</strong> para rastrear
+        anomalias de ponta a ponta e a capacidade de realizar <strong>deploys
           automatizados</strong> com alta frequência e baixo atrito. Além disso, a
-          sinergia de colaboração entre desenvolvimento e infraestrutura (cultura
-          DevOps) é vital para responder com agilidade a incidentes distribuídos.
-        </p>
-      </section>
+        sinergia de colaboração entre desenvolvimento e infraestrutura (cultura
+        DevOps) é vital para responder com agilidade a incidentes distribuídos.
+      </p>
+    </section>
 
-      <section class="post-section">
-  <h2 class="section-badge">Trade-offs Arquiteturais</h2>
-  
-  <div class="tradeoffs-container">
-    <!-- Coluna de Vantagens -->
-    <div class="tradeoff-column">
-      <div class="tradeoff-title">
-        <span class="tag-tradeoff">Pontos Fortes</span>
-        <h3>Vantagens da Abordagem</h3>
-      </div>
-      <ul class="tradeoff-list">
-        <li>
-          <strong>Escalabilidade Granular</strong>
-          <p>Possibilidade de dimensionar apenas os módulos de maior consumo sem onerar a aplicação inteira.</p>
-        </li>
-        <li>
-          <strong>Autonomia Técnica</strong>
-          <p>Equipes podem adotar pilhas tecnológicas específicas e realizar publicações sem depender de um monólito central.</p>
-        </li>
-        <li>
-          <strong>Resiliência Parcial</strong>
-          <p>Falhas isoladas em um serviço não provocam a indisponibilidade total do ecossistema.</p>
-        </li>
-      </ul>
-    </div>
+    <section class="post-section">
+      <h2 class="section-badge" data-i18n="tradeoffs">Trade-offs Arquiteturais</h2>
 
-    
-    <div class="tradeoff-column">
-      <div class="tradeoff-title">
-        <span class="tag-tradeoff">Desafios</span>
-        <h3>Desafios e Limitações</h3>
-      </div>
-      <ul class="tradeoff-list">
-        <li>
-          <strong>Complexidade Operacional</strong>
-          <p>Gestão de dezenas de pontos de rede, latência entre chamadas e dependências distribuídas.</p>
-        </li>
-        <li>
-          <strong>Diagnóstico Difícil</strong>
-          <p>Erros em cadeia exigem ferramentas avançadas de rastreamento distribuído e telemetria centralizada.</p>
-        </li>
-        <li>
-          <strong>Consistência Eventual de Dados</strong>
-          <p>Manter a integridade entre bases isoladas requer padrões complexos (como transações distribuídas e eventos).</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-      
-      <section class="post-section">
-        <div class="case-study-box">
-          <span class="case-tag">Diretriz Estratégica do Autor</span>
-          <h3>A Regra de Ouro: Começar Pequeno (MonolithFirst)</h3>
-          <p>
-            O autor recomenda expressamente que as equipes iniciem novos produtos
-            com uma arquitetura monolítica bem desenhada ou com uma quantidade mínima
-            de microsserviços. Isso permite aprender a dinâmica das fronteiras de
-            negócio antes de fragmentar o sistema.
-          </p>
-          <p>
-            À medida que o domínio amadurece e o tráfego se expande, a automação
-            de CI/CD, os alarmes proativos e a governança operacional são ampliados,
-            garantindo que a equipe controle os serviços em vez de ser soterrada por eles.
-          </p>
-        </div>
-      </section>
-
-      
-      <section class="post-section">
-        <h2 class="section-badge">Impactos na Gestão do Projeto</h2>
-        <div class="management-grid">
-          <div class="management-card">
-            <div class="card-pillar">
-              <span class="pillar-label">Cronograma</span>
-              <h4>Prazo</h4>
-            </div>
-            <p>
-              Exige maior investimento de tempo inicial para estruturar pipelines,
-              testes integrados e orquestração. No longo prazo, acelera o ciclo de
-              lançamento de novas funcionalidades independentes.
-            </p>
+      <div class="tradeoffs-container">
+        <!-- Coluna de Vantagens -->
+        <div class="tradeoff-column">
+          <div class="tradeoff-title">
+            <span class="tag-tradeoff" data-i18n="strengths">Pontos Fortes</span>
+            <h3 data-i18n="advantages">Vantagens da Abordagem</h3>
           </div>
-
-          <div class="management-card">
-            <div class="card-pillar">
-              <span class="pillar-label">Financeiro</span>
-              <h4>Custo</h4>
-            </div>
-            <p>
-              Custos elevados com ferramentas de observabilidade, infraestrutura em
-              nuvem e provisionamento automatizado antes mesmo da primeira funcionalidade rodar em produção.
-            </p>
-          </div>
-
-          <div class="management-card">
-            <div class="card-pillar">
-              <span class="pillar-label">Pessoas</span>
-              <h4>Equipe</h4>
-            </div>
-            <p>
-              Demanda profissionais capacitados em engenharia de confiabilidade (SRE)
-              e DevOps. Reorganiza os times em squads multidisciplinares focadas em serviços específicos.
-            </p>
-          </div>
-
-          <div class="management-card">
-            <div class="card-pillar">
-              <span class="pillar-label">Governança</span>
-              <h4>Riscos</h4>
-            </div>
-            <p>
-              Adotar microsserviços sem pré-requisitos resulta no temido "monólito
-              distribuído", onde qualquer erro de rede derruba o sistema e os custos operacionais explodem.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    
-    <footer class="main-footer">
-      <div class="footer-container">
-        <div class="footer-brand">
-          <img
-            src="img/logos_senai_branco.png"
-            alt="Logo SENAI"
-            class="logo-senai"
-          />
-          <h3>Arquitetura de Software & Gestão</h3>
-          <p>
-            Projeto prático interdisciplinar focado no impacto de padrões
-            arquiteturais no ciclo de vida de projetos de tecnologia.
-          </p>
-        </div>
-
-        <div class="footer-links">
-          <h4>Navegação</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="microsservicos.html">Microserviços</a></li>
+          <ul class="tradeoff-list">
             <li>
-              <a href="sistemasLegados.html">Patterns of Legacy Displacement</a>
+              <strong data-i18n="micro_adv_1_title">Escalabilidade Granular</strong>
+              <p data-i18n="micro_adv_1_desc">Possibilidade de dimensionar apenas os módulos de maior consumo sem onerar a aplicação inteira.</p>
             </li>
-            <li><a href="serverless.html">Arquitetura Serverless</a></li>
+            <li>
+              <strong data-i18n="micro_adv_2_title">Autonomia Técnica</strong>
+              <p data-i18n="micro_adv_2_desc">Equipes podem adotar pilhas tecnológicas específicas e realizar publicações sem depender de um monólito central.</p>
+            </li>
+            <li>
+              <strong data-i18n="micro_adv_3_title">Resiliência Parcial</strong>
+              <p data-i18n="micro_adv_3_desc">Falhas isoladas em um serviço não provocam a indisponibilidade total do ecossistema.</p>
+            </li>
           </ul>
         </div>
 
-        <div class="footer-socials">
-          <div class="social-group">
-            <h4>Equipe de Desenvolvimento</h4>
-            <ul class="social-list">
-              <li>
-                <span class="member-name">Eduardo Couto:</span>
-                <a
-                  href="https://github.com/Azumii20"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub</a
-                >
-                &bull;
-                <a
-                  href="https://www.linkedin.com/in/eduardo-couto-a0a858279/?isSelfProfile=true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <span class="member-name">Luis Augusto:</span>
-                <a
-                  href="https://github.com/Augustoluissilva"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub</a
-                >
-                &bull;
-                <a
-                  href="https://www.linkedin.com/in/luis-augusto-santos-silva/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <span class="member-name">Matheus Pestana:</span>
-                <a
-                  href="https://github.com/matheus-pestana"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >GitHub</a
-                >
-                &bull;
-                <a
-                  href="https://www.linkedin.com/in/matheus-arcangelo?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >LinkedIn</a
-                >
-              </li>
-            </ul>
-          </div>
 
-          <div class="social-group docente">
-            <h4>Docente Responsável</h4>
-            <p class="docente-info">
-              <span class="member-name">Prof. Wesley Fiorezi:</span>
-              <a
-                href="https://www.linkedin.com/in/wesley-fioreze/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
-            </p>
+        <div class="tradeoff-column">
+          <div class="tradeoff-title">
+            <span class="tag-tradeoff" data-i18n="challenges">Desafios</span>
+            <h3 data-i18n="limitations">Desafios e Limitações</h3>
           </div>
+          <ul class="tradeoff-list">
+            <li>
+              <strong data-i18n="micro_chal_1_title">Complexidade Operacional</strong>
+              <p data-i18n="micro_chal_1_desc">Gestão de dezenas de pontos de rede, latência entre chamadas e dependências distribuídas.</p>
+            </li>
+            <li>
+              <strong data-i18n="micro_chal_2_title">Diagnóstico Difícil</strong>
+              <p data-i18n="micro_chal_2_desc">Erros em cadeia exigem ferramentas avançadas de rastreamento distribuído e telemetria centralizada.</p>
+            </li>
+            <li>
+              <strong data-i18n="micro_chal_3_title">Consistência Eventual de Dados</strong>
+              <p data-i18n="micro_chal_3_desc">Manter a integridade entre bases isoladas requer padrões complexos (como transações distribuídas e eventos).</p>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </body>
+    </section>
+
+
+    <section class="post-section">
+      <div class="case-study-box">
+        <span class="case-tag" data-i18n="micro_case_tag">Diretriz Estratégica do Autor</span>
+        <h3 data-i18n="micro_case_title">A Regra de Ouro: Começar Pequeno (MonolithFirst)</h3>
+        <p data-i18n="micro_case_p1">
+          O autor recomenda expressamente que as equipes iniciem novos produtos
+          com uma arquitetura monolítica bem desenhada ou com uma quantidade mínima
+          de microsserviços. Isso permite aprender a dinâmica das fronteiras de
+          negócio antes de fragmentar o sistema.
+        </p>
+        <p data-i18n="micro_case_p2">
+          À medida que o domínio amadurece e o tráfego se expande, a automação
+          de CI/CD, os alarmes proativos e a governança operacional são ampliados,
+          garantindo que a equipe controle os serviços em vez de ser soterrada por eles.
+        </p>
+          <img src="img/monolith.png" class="monolith" alt="Ilustração do conceito Monolith First" />
+      </div>
+    </section>
+
+
+    <section class="post-section">
+      <h2 class="section-badge" data-i18n="project_impacts">Impactos na Gestão do Projeto</h2>
+      <div class="management-grid">
+        <div class="management-card">
+          <div class="card-pillar">
+            <span class="pillar-label" data-i18n="timeline">Cronograma</span>
+            <h4 data-i18n="deadline">Prazo</h4>
+          </div>
+          <p data-i18n="micro_mg_1">
+            Exige maior investimento de tempo inicial para estruturar pipelines,
+            testes integrados e orquestração. No longo prazo, acelera o ciclo de
+            lançamento de novas funcionalidades independentes.
+          </p>
+        </div>
+
+        <div class="management-card">
+          <div class="card-pillar">
+            <span class="pillar-label" data-i18n="financial">Financeiro</span>
+            <h4 data-i18n="cost">Custo</h4>
+          </div>
+          <p data-i18n="micro_mg_2">
+            Custos elevados com ferramentas de observabilidade, infraestrutura em
+            nuvem e provisionamento automatizado antes mesmo da primeira funcionalidade rodar em produção.
+          </p>
+        </div>
+
+        <div class="management-card">
+          <div class="card-pillar">
+            <span class="pillar-label" data-i18n="people">Equipe</span>
+            <h4 data-i18n="team_label">Equipe</h4>
+          </div>
+          <p data-i18n="micro_mg_3">
+            Demanda profissionais capacitados em engenharia de confiabilidade (SRE)
+            e DevOps. Reorganiza os times em squads multidisciplinares focadas em serviços específicos.
+          </p>
+        </div>
+
+        <div class="management-card">
+          <div class="card-pillar">
+            <span class="pillar-label" data-i18n="governance">Governança</span>
+            <h4 data-i18n="risks">Riscos</h4>
+          </div>
+          <p data-i18n="micro_mg_4">
+            Adotar microsserviços sem pré-requisitos resulta no temido "monólito
+            distribuído", onde qualquer erro de rede derruba o sistema e os custos operacionais explodem.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="artigos">
+      <h2 data-i18n="original_article">Artigo Original</h2>
+      <article class="card">
+        <h3>Microservice Prerequisites</h3>
+        <p></p>
+        <a href="https://martinfowler.com/bliki/MicroservicePrerequisites.html" data-i18n="read_full">Ver Conteúdo Completo</a>
+      </article>
+    </section>
+  </main>
+
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="img/logos_senai_branco.png" alt="Logo SENAI" class="logo-senai" />
+        <h3 data-i18n="footer_brand_h3">Arquitetura de Software & Gestão</h3>
+        <p data-i18n="footer_brand_p">
+          Projeto prático interdisciplinar focado no impacto de padrões
+          arquiteturais no ciclo de vida de projetos de tecnologia.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4 data-i18n="footer_nav">Navegação</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="microsservicos.html" data-i18n="nav_microservices">Microserviços</a></li>
+          <li><a href="sistemasLegados.html" data-i18n="nav_legacy">Patterns of Legacy Displacement</a></li>
+          <li><a href="Arquiteturas_sem_servidor.html" data-i18n="nav_serverless">Arquitetura Serverless</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials">
+        <div class="social-group">
+          <h4 data-i18n="footer_team">Equipe de Desenvolvimento</h4>
+          <ul class="social-list">
+            <li>
+              <span class="member-name">Eduardo Couto:</span>
+              <a href="https://github.com/Azumii20" target="_blank" rel="noopener noreferrer">GitHub</a>
+              &bull;
+              <a href="https://www.linkedin.com/in/eduardo-couto-a0a858279/?isSelfProfile=true" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <span class="member-name">Luis Augusto:</span>
+              <a href="https://github.com/Augustoluissilva" target="_blank" rel="noopener noreferrer">GitHub</a>
+              &bull;
+              <a href="https://www.linkedin.com/in/luis-augusto-santos-silva/" target="_blank"
+                rel="noopener noreferrer">LinkedIn</a>
+            </li>
+            <li>
+              <span class="member-name">Matheus Pestana:</span>
+              <a href="https://github.com/matheus-pestana" target="_blank" rel="noopener noreferrer">GitHub</a>
+              &bull;
+              <a href="https://www.linkedin.com/in/matheus-arcangelo?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social-group docente">
+          <h4 data-i18n="footer_teacher">Docente Responsável</h4>
+          <p class="docente-info">
+            <span class="member-name">Prof. Wesley Fiorezi:</span>
+            <a href="https://www.linkedin.com/in/wesley-fioreze/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/translate.js"></script>
+</body>
+
 </html>
