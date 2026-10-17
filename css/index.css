@@ -50,7 +50,7 @@ header {
 
 /* Logótipo aumentado e alinhado à esquerda */
 .navbar .logo {
-    height: 75px; /* Aumentado conforme solicitado (original era 44px) */
+    height: 75px; 
     width: auto;
     object-fit: contain;
     margin-right: auto;
@@ -73,9 +73,7 @@ header {
     color: var(--accent-color);
 }
 
-/* ============================================================
-   CONTEÚDO PRINCIPAL
-   ============================================================ */
+
 main {
     max-width: 1100px;
     margin: 0 auto;

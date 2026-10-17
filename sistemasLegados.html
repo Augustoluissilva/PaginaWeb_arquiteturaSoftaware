@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/post.css" />
-    <!-- Importação de fontes clássicas editoriais -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +15,7 @@
     <title>Patterns of Legacy Displacement | Arquitetura de Software</title>
   </head>
   <body>
-    <!-- Cabeçalho idêntico ao index -->
+    
     <header>
       <nav class="navbar">
         <ul>
@@ -27,12 +27,12 @@
               >Patterns of Legacy Displacement</a
             >
           </li>
-          <li><a href="serverless.html">Arquitetura Serverless</a></li>
+          <li><a href="Arquiteturas_sem_servidor.html">Arquitetura Serverless</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- Conteúdo Principal -->
+    
     <main class="post-main">
       <div class="post-hero">
         <h1>
@@ -45,7 +45,7 @@
         </p>
       </div>
 
-      <!-- Seção de Leitura / Resumo Editorial (Conforme Exemplo 2) -->
+      
       <section class="post-section editorial-article">
         <p class="dropcap-paragraph">
           Muitas organizações operam com sistemas legados essenciais que, ao
@@ -65,56 +65,66 @@
         </p>
       </section>
 
-      <!-- Matriz de Vantagens e Desvantagens -->
+      
       <section class="post-section">
         <h2 class="section-badge">Trade-offs Arquiteturais</h2>
-        <div class="tradeoffs-grid">
-          <div class="tradeoff-card pros">
-            <div class="tradeoff-header">
-              <span class="indicator-icon">&check;</span>
+        
+        <div class="tradeoffs-container">
+          
+          <div class="tradeoff-column">
+            <div class="tradeoff-title">
+              <span class="tag-tradeoff">Pontos Fortes</span>
               <h3>Vantagens da Abordagem</h3>
             </div>
-            <ul>
+            <ul class="tradeoff-list">
               <li>
-                <strong>Entrega Contínua de Valor:</strong> Novas
-                funcionalidades entram em produção de forma rápida e iterativa.
+                <strong>Mitigação Radical de Risco Operacional</strong>
+                <p>Evita o colapso do negócio típico de viragens "Big Bang"; caso surja uma anomalia num módulo novo, a reversão ou correção é cirúrgica e imediata sem paralisar o sistema central.</p>
               </li>
               <li>
-                <strong>Mitigação de Falhas:</strong> Problemas ficam restritos
-                ao escopo do módulo alterado, sem afetar a empresa inteira.
+                <strong>Entrega Contínua e Antecipada de Valor</strong>
+                <p>O retorno do investimento e as melhorias para os utilizadores chegam a produção faseadamente, em vez de ficarem retidos por anos até à conclusão da plataforma completa.</p>
               </li>
               <li>
-                <strong>Coexistência Segura:</strong> Sistemas novo e antigo
-                sincronizam dados durante a transição sem impacto aos
-                utilizadores.
+                <strong>Validação Real com Tráfego de Produção</strong>
+                <p>Permite testar e calibrar novas tecnologias com utilizadores e cargas reais através de técnicas de interceção, adaptadores e desvio progressivo de rotas.</p>
+              </li>
+              <li>
+                <strong>Curva de Aprendizagem Sustentável</strong>
+                <p>A equipa assimila a nova pilha de ferramentas e a arquitetura moderna gradualmente, evitando sobrecargas cognitivas e facilitando a gestão do conhecimento.</p>
               </li>
             </ul>
           </div>
 
-          <div class="tradeoff-card cons">
-            <div class="tradeoff-header">
-              <span class="indicator-icon">&times;</span>
-              <h3>Desafios e Desvantagens</h3>
+          
+          <div class="tradeoff-column">
+            <div class="tradeoff-title">
+              <span class="tag-tradeoff">Desafios</span>
+              <h3>Desafios e Limitações</h3>
             </div>
-            <ul>
+            <ul class="tradeoff-list">
               <li>
-                <strong>Complexidade Temporária:</strong> Necessidade de criar
-                pontes, barramentos e adaptadores provisórios.
+                <strong>Complexidade Temporária da Arquitetura Híbrida</strong>
+                <p>Exige a conceção e sustentação de barramentos provisórios, camadas de adaptação (como padrões Strangler Fig) e tradutores de protocolos durante todo o período de coexistência.</p>
               </li>
               <li>
-                <strong>Custo de Sustentação Duplo:</strong> Gastos operacionais
-                para manter duas estruturas rodando em simultâneo.
+                <strong>Gestão Crítica da Consistência de Dados</strong>
+                <p>A sincronização bidirecional entre bases de dados antigas e novas cria riscos acrescidos de desfasamento, duplicação e necessidade de rotinas de reconciliação contínua.</p>
               </li>
               <li>
-                <strong>Sincronização de Dados:</strong> Requer monitorização
-                estrita da consistência entre as bases de dados.
+                <strong>Custo de Sustentação em Duplicado</strong>
+                <p>Durante a transição prolongada, a organização tem de arcar com licenças, infraestruturas e monitorização simultânea de dois ambientes distintos.</p>
+              </li>
+              <li>
+                <strong>Risco de Interrupção Prematura</strong>
+                <p>Existe a armadilha de a liderança dar o projeto por concluído após migrar os módulos vitais, deixando o legado antigo eternamente ativo e aumentando a dívida técnica global.</p>
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Estudo de Caso Prático -->
+     
       <section class="post-section">
         <div class="case-study-box">
           <span class="case-tag">Caso Prático Analisado</span>
@@ -134,7 +144,7 @@
         </div>
       </section>
 
-      <!-- Impacto na Gestão de Projetos -->
+      
       <section class="post-section">
         <h2 class="section-badge">Impactos na Gestão do Projeto</h2>
         <div class="management-grid">
@@ -186,7 +196,7 @@
       </section>
     </main>
 
-    <!-- Rodapé idêntico ao index -->
+    
     <footer class="main-footer">
       <div class="footer-container">
         <div class="footer-brand">

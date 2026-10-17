@@ -1,25 +1,19 @@
-/* ============================================================
-   ESTILOS DEDICADOS ÀS PÁGINAS DE ARTIGOS (POST.CSS)
-   ============================================================ */
-
 .post-main {
     max-width: 950px;
     margin: 0 auto;
     padding: 3rem 1.5rem 5rem;
 }
 
-/* ============================================================
-   CABEÇALHO DO ARTIGO (100% TRANSPARENTE E SEM FUNDO)
-   ============================================================ */
+
 .post-hero {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
     padding: 0;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
 }
 
-/* Título Serifado Editorial */
+
 .post-hero h1 {
     font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
     font-size: 3.4rem;
@@ -30,7 +24,7 @@
     margin-bottom: 1.25rem;
 }
 
-/* Destaque em Itálico e Ciano (Sem nenhuma linha embaixo) */
+
 .post-hero h1 .destaque-serif {
     font-style: italic;
     font-weight: 400;
@@ -42,7 +36,7 @@
     text-decoration: none !important;
 }
 
-/* Subtítulo / Lead Editorial */
+
 .post-lead {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 1.15rem;
@@ -52,7 +46,7 @@
     margin-bottom: 1.5rem;
 }
 
-/* Metadados e Referência do Artigo Original */
+
 .post-meta-bar {
     font-size: 0.88rem;
     color: #64748b;
@@ -75,11 +69,9 @@
     text-decoration: underline;
 }
 
-/* ============================================================
-   CORPO EDITORIAL E LETRA CAPITULAR (DROPCAP)
-   ============================================================ */
+
 .editorial-article {
-    margin-bottom: 4rem;
+    margin-bottom: 3.5rem;
 }
 
 .editorial-article p {
@@ -102,28 +94,25 @@
     color: #f1f5f9;
 }
 
-/* Letra Capitular (A grande inicial destacada no parágrafo de abertura) */
+/* Primeira letra destacada (apenas na primeira linha) */
 .dropcap-paragraph::first-letter {
     font-family: 'Playfair Display', Georgia, serif;
-    float: left;
-    font-size: 4.8rem;
-    line-height: 0.8;
-    padding-top: 6px;
-    padding-right: 14px;
-    padding-bottom: 4px;
-    color: #38bdf8;
+    font-size: 1.6em;
     font-weight: 700;
+    color: #38bdf8;
+    float: none;
+    margin: 0;
+    padding: 0 2px 0 0;
+    vertical-align: baseline;
 }
 
-/* ============================================================
-   SEÇÕES COMPLEMENTARES E BADGES
-   ============================================================ */
+
 .post-section {
     margin-bottom: 4rem;
 }
 
 .section-badge {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--accent-color);
@@ -133,71 +122,83 @@
     display: inline-block;
 }
 
-/* ============================================================
-   GRID DE TRADE-OFFS (VANTAGENS & DESVANTAGENS)
-   ============================================================ */
-.tradeoffs-grid {
+
+.tradeoffs-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1.75rem;
+    gap: 3.5rem;
+    padding: 1rem 0 2rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.tradeoff-card {
-    background-color: var(--bg-surface);
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    padding: 1.75rem;
-}
-
-.tradeoff-card.pros { 
-    border-top: 4px solid #10b981; /* Verde esmeralda */
-}
-
-.tradeoff-card.cons { 
-    border-top: 4px solid #f43f5e; /* Rosa avermelhado */
-}
-
-.tradeoff-header {
+.tradeoff-column {
     display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    margin-bottom: 1.25rem;
+    flex-direction: column;
 }
 
-.indicator-icon { 
-    font-size: 1.25rem; 
-    font-weight: 900; 
+.tradeoff-title {
+    margin-bottom: 1.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.pros .indicator-icon { color: #10b981; }
-.cons .indicator-icon { color: #f43f5e; }
+.tag-tradeoff {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent-color);
+    margin-bottom: 0.35rem;
+}
 
-.tradeoff-header h3 {
-    font-size: 1.15rem;
+.tradeoff-title h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.45rem;
+    font-weight: 600;
     color: var(--text-primary);
 }
 
-.tradeoff-card ul {
+.tradeoff-list {
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.85rem;
+    gap: 1.75rem;
 }
 
-.tradeoff-card li {
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-    line-height: 1.55;
+.tradeoff-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    border-left: 2px solid var(--border-color);
+    transition: border-left-color 0.2s ease;
 }
 
-/* ============================================================
-   ESTUDO DE CASO PRÁTICO
-   ============================================================ */
+.tradeoff-list li:hover {
+    border-left-color: var(--accent-color);
+}
+
+.tradeoff-list strong {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.tradeoff-list p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    font-size: 0.95rem !important;
+    color: var(--text-secondary) !important;
+    line-height: 1.55 !important;
+    margin: 0 !important;
+}
+
+
 .case-study-box {
     background: linear-gradient(145deg, #13223f 0%, #0d172e 100%);
     border: 1px solid #1e3a6a;
-    border-left: 5px solid var(--accent-color);
+    border-left: 4px solid var(--accent-color);
     border-radius: 8px;
     padding: 2rem;
 }
@@ -229,9 +230,7 @@
     margin-bottom: 0;
 }
 
-/* ============================================================
-   GRID DE GESTÃO DO PROJETO (4 PILARES)
-   ============================================================ */
+
 .management-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
@@ -274,23 +273,18 @@
     font-size: 0.9rem;
     color: var(--text-secondary);
     line-height: 1.55;
+    margin: 0;
 }
 
-/* ============================================================
-   RESPONSIVIDADE (MOBILE / TABLET)
-   ============================================================ */
+
 @media (max-width: 768px) {
     .post-hero h1 {
         font-size: 2.2rem;
     }
 
-    .dropcap-paragraph::first-letter {
-        font-size: 3.8rem;
-        padding-right: 10px;
-    }
-
-    .tradeoffs-grid {
+    .tradeoffs-container {
         grid-template-columns: 1fr;
+        gap: 2.5rem;
     }
 
     .management-grid {
